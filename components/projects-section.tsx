@@ -19,9 +19,15 @@ export function ProjectsSection() {
             className="projectCard"
             initial={{ opacity: 0, y: 48 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -8 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, delay: index * 0.08 }}
           >
+            <div className="projectVisual" aria-hidden="true">
+              <span>{project.name}</span>
+              <small>{project.stack.slice(0, 3).join(" • ")}</small>
+            </div>
+
             <div className="projectTopline">
               <p className="sectionEyebrow">0{index + 1}</p>
               <span>Case study</span>

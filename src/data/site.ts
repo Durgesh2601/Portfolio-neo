@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Durgesh Kumar Singh",
   shortName: "Durgesh",
-  title: "Frontend Engineer building performant, conversion-focused web experiences.",
+  title: "Frontend Engineer building scalable, high-performance product experiences.",
   description:
-    "Portfolio of Durgesh Kumar Singh, a Bengaluru-based Frontend Engineer specializing in React, TypeScript, Next.js, UI engineering, and high-performance product experiences.",
+    "Portfolio of Durgesh Kumar Singh, a Bengaluru-based Frontend Engineer specializing in React, TypeScript, Next.js, scalable UI systems, and high-performance product experiences.",
   role: "SDE-2 at WizCommerce",
   timeframe: "May 2022 - Present",
   location: "Bengaluru, Karnataka, India",
@@ -23,9 +23,9 @@ export const siteConfig = {
   ],
   hero: {
     eyebrow: "Frontend Engineer • React • Next.js • TypeScript",
-    heading: "Designing fast, modern interfaces that feel polished at every scroll.",
+    heading: "Building fast, scalable interfaces that stay polished under real product complexity.",
     summary:
-      "I build product experiences with a strong UI sensibility, clean engineering foundations, and a constant focus on speed, clarity, and conversion.",
+      "I work across frontend architecture, performance, testing, and interaction design to ship production-grade experiences that are intuitive for users and reliable for teams.",
     primaryCta: {
       label: "Start a conversation",
       href: "mailto:dk829445@gmail.com"
@@ -35,9 +35,9 @@ export const siteConfig = {
       href: "#projects"
     },
     stats: [
-      { value: "3+", label: "years building web products" },
-      { value: "2", label: "featured shipped side projects" },
-      { value: "React", label: "ecosystem focus area" }
+      { value: "4", label: "years in frontend engineering" },
+      { value: "7+", label: "payment gateways integrated" },
+      { value: "70K+", label: "records handled in data-heavy UIs" }
     ]
   },
   experience: [
@@ -46,11 +46,14 @@ export const siteConfig = {
       company: "WizCommerce",
       period: "May 2022 - Present",
       description:
-        "Building scalable frontends with a strong emphasis on maintainability, responsiveness, and user experience for commerce-focused products.",
+        "Working across large-scale React and TypeScript applications for enterprise commerce workflows, with a focus on modular architecture, frontend performance, and production reliability.",
       highlights: [
-        "Shipping polished experiences with React, TypeScript, and Next.js",
-        "Transforming complex workflows into simpler, user-friendly interfaces",
-        "Working closely with teams in fast-moving product environments"
+        "Migrated 3 production applications from CRA to Vite, cutting build times from roughly 10 to 12 minutes down to about 2.5 minutes and improving CI reliability",
+        "Led frontend performance improvements including React 17 to 18 migration, memoization, render optimization, and API caching, helping reduce page load times by 15%",
+        "Designed data-intensive dashboards with Ag-Grid SSRM to support 70K+ records with server-side pagination, sorting, and filtering",
+        "Integrated and secured 7+ enterprise payment gateways with tokenization and detokenization flows for payment, refund, and subscription journeys",
+        "Built SEO and slug-management tooling for customer-facing pages and contributed to stronger metadata control across products",
+        "Wrote unit, integration, and E2E coverage with React Testing Library and Cypress while mentoring junior engineers and maintaining frontend quality standards"
       ]
     }
   ],
@@ -58,9 +61,9 @@ export const siteConfig = {
     {
       name: "Best Buddy",
       description:
-        "A real-estate platform focused on effortless property discovery, management, and personalized recommendations.",
+        "A MERN real-estate platform centered on role-based property discovery, management workflows, and personalized recommendations.",
       impact:
-        "Built a cleaner browsing experience around search, discovery, and management flows for users exploring their next home.",
+        "Built a responsive experience around listing discovery, management, and recommendation flows with a stronger emphasis on usability and clarity.",
       stack: ["React", "Node", "ExpressJS", "Bootstrap"],
       liveUrl: "https://best-buddy-app.netlify.app",
       codeUrl: "https://github.com/Durgesh2601/best-buddy"
@@ -68,9 +71,9 @@ export const siteConfig = {
     {
       name: "DevExplorer",
       description:
-        "A TypeScript-first GitHub explorer for browsing developer profiles, repositories, and key account information.",
+        "A TypeScript-powered GitHub explorer for browsing developer profiles, repositories, and key account information.",
       impact:
-        "Focused on a fast information architecture and a smoother profile exploration flow for developer discovery.",
+        "Focused on a cleaner information hierarchy and smoother developer exploration flow for quickly surfacing profile details.",
       stack: ["React", "TypeScript", "Material UI"],
       liveUrl: "https://dev-explorer.vercel.app",
       codeUrl: "https://github.com/Durgesh2601/DevExplorer"
@@ -91,9 +94,9 @@ export const siteConfig = {
     "Vercel"
   ],
   about: [
-    "I am a passionate and results-driven Frontend Engineer with more than three years of experience building scalable, performant web applications using React, TypeScript, and Next.js.",
-    "My work blends clean code, strong collaboration, and deep attention to interaction quality so that complex products feel intuitive and reliable.",
-    "I care about delivering interfaces that are not only visually refined but also measurable in performance, accessibility, and business impact."
+    "I am a frontend engineer with 4 years of experience building production-grade applications using React, TypeScript, and modern frontend tooling.",
+    "A lot of my recent work has involved shared-code systems, performance tuning, payment workflows, large datasets, and the kind of UI complexity that needs both strong architecture and careful product thinking.",
+    "I care about building interfaces that feel crisp and intuitive, while still being maintainable, accessible, and measurable in performance."
   ],
   contact: {
     heading: "Let us build something sharp, fast, and memorable.",

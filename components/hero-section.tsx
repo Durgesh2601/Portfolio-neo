@@ -12,14 +12,17 @@ export function HeroSection() {
     offset: ["start start", "end start"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, 140]);
-  const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.35]);
-  const reverseY = useTransform(scrollYProgress, [0, 1], [0, -120]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 72]);
+  const opacity = useTransform(scrollYProgress, [0, 0.9], [1, 0.48]);
+  const reverseY = useTransform(scrollYProgress, [0, 1], [0, -70]);
+  const panelY = useTransform(scrollYProgress, [0, 1], [0, -24]);
+  const panelScale = useTransform(scrollYProgress, [0, 1], [1, 0.96]);
 
   return (
     <section ref={ref} className="heroSection shell" id="top">
       <motion.div className="heroBackdrop heroOrbOne" style={{ y }} />
       <motion.div className="heroBackdrop heroOrbTwo" style={{ y: reverseY }} />
+      <motion.div className="heroBeam" style={{ y: reverseY }} />
 
       <motion.div className="heroContent" style={{ y, opacity }}>
         <motion.p
@@ -31,10 +34,19 @@ export function HeroSection() {
           {siteConfig.hero.eyebrow}
         </motion.p>
 
+        <motion.div
+          className="heroLeadIn"
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.18, duration: 0.8 }}
+        >
+          Product systems, interaction craft, and measurable frontend performance.
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.22, duration: 0.9 }}
+          transition={{ delay: 0.24, duration: 0.9 }}
         >
           {siteConfig.hero.heading}
         </motion.h1>
@@ -65,10 +77,12 @@ export function HeroSection() {
 
       <motion.div
         className="heroPanel"
+        style={{ y: panelY, scale: panelScale }}
         initial={{ opacity: 0, y: 40, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ delay: 0.28, duration: 0.95, ease: [0.22, 1, 0.36, 1] }}
       >
+        <div className="heroPanelGrid" aria-hidden="true" />
         <div className="profileCard">
           <div className="profileMonogram">DK</div>
           <div>
@@ -88,11 +102,11 @@ export function HeroSection() {
         </div>
 
         <div className="signalCard">
-          <p className="signalLabel">Focus areas</p>
+          <p className="signalLabel">Recent work</p>
           <ul>
-            <li>SEO-ready architecture</li>
-            <li>Motion with restraint</li>
-            <li>High-performance frontend delivery</li>
+            <li>Shared-code React and TypeScript applications</li>
+            <li>Performance improvements and frontend migrations</li>
+            <li>Data-heavy dashboards and payment workflows</li>
           </ul>
         </div>
       </motion.div>

@@ -15,7 +15,7 @@ export function AboutSection() {
         transition={{ duration: 0.75 }}
       >
         <p className="sectionEyebrow">About</p>
-        <h2>Strong frontend engineering with an eye for detail and iteration.</h2>
+        <h2>Strong frontend systems thinking with a sharp eye for interaction quality.</h2>
       </motion.div>
 
       <motion.div

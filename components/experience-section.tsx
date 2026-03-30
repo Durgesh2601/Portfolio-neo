@@ -9,10 +9,10 @@ export function ExperienceSection() {
     <section className="contentSection shell" id="experience">
       <div className="sectionIntro stickyIntro">
         <p className="sectionEyebrow">Experience</p>
-        <h2>Frontend work that balances speed, clarity, and product thinking.</h2>
+        <h2>Frontend engineering shaped by scale, performance, and product ownership.</h2>
         <p>
-          I enjoy taking ambitious UI ideas and translating them into maintainable systems
-          that feel smooth in production, not just in design files.
+          My focus is building production-ready interfaces that can handle real workflows:
+          shared codebases, data-heavy screens, payment flows, testing, and performance at scale.
         </p>
       </div>
 

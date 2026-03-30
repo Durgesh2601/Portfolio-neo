@@ -1,20 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope, Playfair_Display } from "next/font/google";
+import { IBM_Plex_Mono, Plus_Jakarta_Sans } from "next/font/google";
 
 import { ThemeScript } from "@/components/theme-script";
 import { siteConfig } from "@/src/data/site";
 
 import "./globals.css";
 
-const manrope = Manrope({
+const jakarta = Plus_Jakarta_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap"
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-serif",
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap"
 });
 
@@ -99,7 +100,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} ${playfair.variable}`}>
+      <body className={`${jakarta.variable} ${plexMono.variable}`}>
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
         <ThemeScript />
         {children}
