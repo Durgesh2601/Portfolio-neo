@@ -763,6 +763,7 @@ img {
 }
 
 .contactIconWrap {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -771,6 +772,15 @@ img {
   border-radius: 999px;
   border: 1px solid var(--border);
   background: color-mix(in srgb, var(--surface) 78%, transparent);
+}
+
+.contactIconWrap .uiIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.05rem;
+  height: 1.05rem;
+  transform: translate(-50%, -50%);
 }
 
 .contactArrow {
