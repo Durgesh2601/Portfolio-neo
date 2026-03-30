@@ -23,7 +23,13 @@ export function ProjectsSection() {
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, delay: index * 0.08 }}
           >
-            <div className="projectVisual" aria-hidden="true">
+            <div
+              className="projectVisual"
+              aria-hidden="true"
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(10, 12, 16, 0.16), rgba(10, 12, 16, 0.44) 45%, rgba(10, 12, 16, 0.92) 100%), url(${project.image})`,
+              }}
+            >
               <span>{project.name}</span>
               <small>{project.stack.slice(0, 3).join(" • ")}</small>
             </div>

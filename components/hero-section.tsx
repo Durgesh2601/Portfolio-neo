@@ -73,6 +73,14 @@ export function HeroSection() {
           <a className="buttonSecondary" href={siteConfig.hero.secondaryCta.href}>
             {siteConfig.hero.secondaryCta.label}
           </a>
+          <a
+            className="buttonTertiary"
+            href={siteConfig.hero.tertiaryCta.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {siteConfig.hero.tertiaryCta.label}
+          </a>
         </motion.div>
       </motion.div>
 
@@ -97,7 +105,12 @@ export function HeroSection() {
           </div>
           <div className="profileCopy">
             <p className="profileLabel">Current role</p>
-            <h2>{siteConfig.role}</h2>
+            <h2>
+              SDE-2 at{" "}
+              <a href={siteConfig.companyUrl} target="_blank" rel="noreferrer" className="inlineCompanyLink">
+                WizCommerce
+              </a>
+            </h2>
             <p className="profileMeta">{siteConfig.timeframe}</p>
           </div>
         </div>

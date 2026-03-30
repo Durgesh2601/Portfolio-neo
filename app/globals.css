@@ -422,6 +422,18 @@ img {
   font-weight: 600;
 }
 
+.buttonTertiary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.92rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-weight: 600;
+  background: transparent;
+  color: var(--foreground);
+}
+
 .buttonPrimary {
   background: var(--foreground);
   color: var(--background);
@@ -432,7 +444,8 @@ img {
 }
 
 .buttonPrimary::after,
-.buttonSecondary::after {
+.buttonSecondary::after,
+.buttonTertiary::after {
   content: "↗";
   margin-left: 0.55rem;
   font-size: 0.95rem;
@@ -535,6 +548,10 @@ img {
   font-size: 1.85rem;
   line-height: 1.08;
   letter-spacing: -0.04em;
+}
+
+.inlineCompanyLink {
+  color: var(--accent);
 }
 
 .profileMeta,
@@ -645,6 +662,7 @@ img {
 }
 
 .projectVisual {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -653,22 +671,38 @@ img {
   padding: 1rem;
   border: 1px solid var(--border);
   border-radius: 1.4rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.projectVisual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
-    radial-gradient(circle at top right, rgba(68, 121, 255, 0.24), transparent 38%),
-    radial-gradient(circle at bottom left, rgba(241, 155, 97, 0.26), transparent 40%),
-    linear-gradient(160deg, color-mix(in srgb, var(--surface-alt) 92%, transparent), color-mix(in srgb, var(--surface) 90%, transparent));
+    linear-gradient(180deg, rgba(7, 9, 12, 0.04) 0%, rgba(7, 9, 12, 0.15) 30%, rgba(7, 9, 12, 0.74) 100%);
+  pointer-events: none;
 }
 
 .projectVisual span {
+  position: relative;
+  z-index: 1;
   font-size: 1.55rem;
   font-weight: 650;
   letter-spacing: -0.04em;
+  color: #f7f3ee;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .projectVisual small {
+  position: relative;
+  z-index: 1;
   margin-top: 0.4rem;
-  color: var(--muted);
+  color: rgba(247, 243, 238, 0.82);
   font-size: 0.86rem;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.38);
 }
 
 .projectTopline {
@@ -905,8 +939,9 @@ img {
   }
 
   .heroSection {
-    padding-top: 1.8rem;
-    gap: 1.1rem;
+    padding-top: 1.35rem;
+    padding-bottom: 0.75rem;
+    gap: 0.7rem;
   }
 
   .heroContent h1 {
@@ -926,13 +961,17 @@ img {
   }
 
   .heroActions {
+    margin-top: 1rem;
     flex-direction: column;
+    gap: 0.75rem;
   }
 
   .buttonPrimary,
-  .buttonSecondary {
+  .buttonSecondary,
+  .buttonTertiary {
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
 
   .statGrid,
