@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+import { ArrowUpRightIcon, GithubIcon, MailIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
 import { siteConfig } from "@/src/data/site";
 
 export function ContactSection() {
@@ -21,21 +22,29 @@ export function ContactSection() {
         </div>
 
         <div className="contactGrid">
-          <a href={`mailto:${siteConfig.email}`}>
+          <a href={`mailto:${siteConfig.email}`} className="contactLinkCard">
+            <span className="contactIconWrap"><MailIcon className="uiIcon" /></span>
             <span>Email</span>
             <strong>{siteConfig.email}</strong>
+            <ArrowUpRightIcon className="contactArrow" />
           </a>
-          <a href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}>
+          <a href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`} className="contactLinkCard">
+            <span className="contactIconWrap"><PhoneIcon className="uiIcon" /></span>
             <span>Phone</span>
             <strong>{siteConfig.phone}</strong>
+            <ArrowUpRightIcon className="contactArrow" />
           </a>
-          <a href={siteConfig.mapUrl} target="_blank" rel="noreferrer">
+          <a href={siteConfig.mapUrl} target="_blank" rel="noreferrer" className="contactLinkCard">
+            <span className="contactIconWrap"><MapPinIcon className="uiIcon" /></span>
             <span>Location</span>
             <strong>{siteConfig.location}</strong>
+            <ArrowUpRightIcon className="contactArrow" />
           </a>
-          <a href={siteConfig.githubUrl} target="_blank" rel="noreferrer">
+          <a href={siteConfig.githubUrl} target="_blank" rel="noreferrer" className="contactLinkCard">
+            <span className="contactIconWrap"><GithubIcon className="uiIcon" /></span>
             <span>GitHub</span>
             <strong>@Durgesh2601</strong>
+            <ArrowUpRightIcon className="contactArrow" />
           </a>
         </div>
       </motion.div>

@@ -23,9 +23,9 @@ export const siteConfig = {
   ],
   hero: {
     eyebrow: "Frontend Engineer • React • Next.js • TypeScript",
-    heading: "Building fast, scalable interfaces that stay polished under real product complexity.",
+    heading: "Building scalable interfaces for complex digital products.",
     summary:
-      "I work across frontend architecture, performance, testing, and interaction design to ship production-grade experiences that are intuitive for users and reliable for teams.",
+      "I build reliable frontend systems across Core Web Vitals, performance optimization, payment flows, data-heavy dashboards, and shared-code product architecture.",
     primaryCta: {
       label: "Start a conversation",
       href: "mailto:dk829445@gmail.com"
@@ -49,7 +49,7 @@ export const siteConfig = {
         "Working across large-scale React and TypeScript applications for enterprise commerce workflows, with a focus on modular architecture, frontend performance, and production reliability.",
       highlights: [
         "Migrated 3 production applications from CRA to Vite, cutting build times from roughly 10 to 12 minutes down to about 2.5 minutes and improving CI reliability",
-        "Led frontend performance improvements including React 17 to 18 migration, memoization, render optimization, and API caching, helping reduce page load times by 15%",
+        "Led frontend performance improvements across Core Web Vitals, React 17 to 18 migration, memoization, render optimization, lazy loading, and API caching, helping reduce page load times by 15%",
         "Designed data-intensive dashboards with Ag-Grid SSRM to support 70K+ records with server-side pagination, sorting, and filtering",
         "Integrated and secured 7+ enterprise payment gateways with tokenization and detokenization flows for payment, refund, and subscription journeys",
         "Built SEO and slug-management tooling for customer-facing pages and contributed to stronger metadata control across products",
@@ -95,7 +95,7 @@ export const siteConfig = {
   ],
   about: [
     "I am a frontend engineer with 4 years of experience building production-grade applications using React, TypeScript, and modern frontend tooling.",
-    "A lot of my recent work has involved shared-code systems, performance tuning, payment workflows, large datasets, and the kind of UI complexity that needs both strong architecture and careful product thinking.",
+    "A lot of my recent work has involved shared-code systems, Core Web Vitals, performance tuning, payment workflows, large datasets, and the kind of UI complexity that needs both strong architecture and careful product thinking.",
     "I care about building interfaces that feel crisp and intuitive, while still being maintainable, accessible, and measurable in performance."
   ],
   contact: {

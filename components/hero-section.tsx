@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 import { siteConfig } from "@/src/data/site";
@@ -84,8 +85,17 @@ export function HeroSection() {
       >
         <div className="heroPanelGrid" aria-hidden="true" />
         <div className="profileCard">
-          <div className="profileMonogram">DK</div>
-          <div>
+          <div className="profileMonogram">
+            <Image
+              src="/profile.jpg"
+              alt="Portrait of Durgesh Kumar Singh"
+              width={96}
+              height={96}
+              priority
+              className="profileImage"
+            />
+          </div>
+          <div className="profileCopy">
             <p className="profileLabel">Current role</p>
             <h2>{siteConfig.role}</h2>
             <p className="profileMeta">{siteConfig.timeframe}</p>
